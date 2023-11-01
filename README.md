@@ -1,7 +1,7 @@
 # Heavy-Load-Helper
 A prototype idea that aims to redirect and store heavy requests till resources become available and they can be processed. This helps prevent cascading failure in applications with heavy load
 
-## How it worksd
+## How it works
 - Add a middleware to your server that checks the cpu and ram available.
 - If cpu or ram is below the threshold given in config redirects the request to a monitor server.
 - Monitor server stores the request then redirects it to a server under the same service when there is sufficient resourse in the server.
