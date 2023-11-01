@@ -21,10 +21,10 @@ export function requestForward(
     cpuUsage > parseFloat(process.env.CPU_THRESHOLD)
   ) {
     console.log("Low on resoures..rerouting to monitor");
-    if (!process.env.CONTROL_SERVER) {
-      throw new Error("CONTROL_SERVER url not set");
+    if (!process.env.MONITOR_URL) {
+      throw new Error("MONITOR_URL url not set");
     }
-    const url = new URL(process.env.CONTROL_SERVER);
+    const url = new URL(process.env.MONITOR_URL);
     url.pathname =
       "wait/" +
       process.env.APP_NAME +

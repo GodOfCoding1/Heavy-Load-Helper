@@ -11,9 +11,6 @@ services:
     networks:
       - monitor-net
     environment:
-      - PORT=8001
-      - APP_NAME=service-a
-      - MONITOR_URL=http://monitor:3000
       - MEM_THRESHOLD=95
       - CPU_THRESHOLD=95
 
@@ -35,6 +32,7 @@ services:
       - MONITOR_URL=http://monitor:3000
       - MEM_THRESHOLD=95
       - CPU_THRESHOLD=95
+
     mem_limit: 512m
     mem_reservation: 128M
     cpus: 0.5
