@@ -1,5 +1,5 @@
 # Heavy-Load-Helper
-A prototype idea that aims to redirect and store heavy requests till resources become available and they can be processed. This helps prevent cascading failure in applications with heavy load
+A prototype idea that aims to redirect and store heavy requests till resources become available and they can be processed. This helps prevent cascading failure in applications with heavy load.
 
 ## How it works
 - Add a middleware to your server that checks the cpu and ram available.
